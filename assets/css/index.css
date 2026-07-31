@@ -1,0 +1,82 @@
+:root {
+    --cor-laranja: #FF8200;
+    --cor-cinza: #6f7072;
+    --cor-cinza-claro: #ecedec;
+}
+
+body {
+    background-color: var(--cor-cinza-claro);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.perfil-container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 48px 16px 32px;
+}
+
+.perfil-foto {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--cor-laranja);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.perfil-nome {
+    color: var(--cor-cinza);
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.perfil-bio {
+    color: var(--cor-cinza);
+    opacity: 0.85;
+    font-size: 0.95rem;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #ffffff;
+    border: 2px solid var(--cor-laranja);
+    border-radius: 14px;
+    padding: 14px 20px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: var(--cor-cinza);
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.link-card:hover,
+.link-card:focus {
+    background-color: var(--cor-laranja);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.link-card i {
+    font-size: 1.4rem;
+    color: var(--cor-laranja);
+    transition: color 0.2s ease;
+}
+
+.link-card:hover i,
+.link-card:focus i {
+    color: #ffffff;
+}
+
+.link-texto {
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer {
+    color: var(--cor-cinza);
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
